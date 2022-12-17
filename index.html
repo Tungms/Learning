@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Build on Bootstrap 4</title>
+  <script src="./Bootstrap/JS/jquery-3.2.1.slim.min.js"></script>
+  <link rel="stylesheet" href="./Bootstrap/CSS/bootstrap.min.css">
+  <script src="./Bootstrap/JS/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./CSS/Product.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.10.1/bootstrap-icon.css">
+  <script src="./JS/Bài 1.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">CollectingApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Customer
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Purchased</a>
+              <a class="dropdown-item" href="#">Listing Product</a>
+            </div>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <fieldset>
+          <legend>Danh sách sản phẩm</legend>
+          <table class="table">
+              <tr>
+                  <td>STT</td>
+                  <td>Tên sản phẩm</td>
+                  <td>Giá</td>
+                  <td>Đơn vị tính</td>
+                  <td>#</td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Áo thun</td>
+                  <td>10000</td>
+                  <td>Cái</td>
+                  <td>Icon</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Quần jean</td>
+                  <td>20000</td>
+                  <td>Chiếc</td>
+                  <td>Icon</td>
+              </tr>
+          </table>
+      </fieldset>
+  </div>
+      <div class="col-md-5">
+        <fieldset>
+          <legend>Thông tin sản phẩm</legend>
+          <h1>Nhập thông tin sản phẩm</h1>
+          <label for="ProductName">Tên sản phẩm:</label>
+          <input type="text" id="ProductName" placeholder="Hãy nhập tên sản phẩm ..."><br>
+          <label for="ProductCode">Mã sản phẩm:</label>
+          <input type="text" id="ProductCode" placeholder="Hãy nhập mã sản phẩm ..." class="input-control"><br>
+          <label for="Loại sản phẩm" class="input-control">Loại sản phẩm:</label>
+          <input type="radio" name="1">Đồ gia dụng</type>
+          <input type="radio" name="1">Đồ điện tử</type>
+          <input type="radio" name="1">Quần áo</type>
+          <input type="radio" name="1">Sách</type><br>
+          <label class="myfont">Đơn vị tính:</label>
+          <select>
+            <option value="1">Bao</option>
+            <option value="2">Cái</option>
+            <option value="3">Chiếc</option>
+          </select><br>
+          <label for="Giá sản phẩm">Giá sản phẩm:</label>
+          <input type="text" id="Giá sản phẩm" placeholder="Nhập giá sản phẩm ..."><br>
+          <label>Ngày nhập:</label>
+          <input type="date"><br>
+          <label>Mô tả:</label>
+          <textarea placeholder="Mô tả sản phẩm ..."></textarea><br>
+          <label for="submit"></label>
+          <input type="submit" id="submit" value="Submit">
+        </fieldset>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright 2021</p>
+  </footer>
+</body>
+
+</html>

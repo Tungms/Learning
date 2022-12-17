@@ -1,0 +1,55 @@
+header, footer {
+    background-color: grey;
+    height: 60px;
+    width: auto;
+}
+
+nav {
+    text-align: center;
+    height: 100%;
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    width: 10%;
+}
+
+nav li a {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    padding-top: 0.7em;
+}
+
+footer {
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+}
+
+.container {
+    width: 47%;
+    height: auto;
+    display: inline-block;
+    margin-left: 2%;
+    min-height: 600px;
+}
+
+fieldset {
+    margin-top: 1rem;
+    height: auto;
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+legend {
+    font-size: x-large;
+}
